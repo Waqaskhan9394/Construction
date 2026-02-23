@@ -1,0 +1,29 @@
+@import "tailwindcss";
+.stroke-text {
+  -webkit-text-stroke: 1px white;  /* mobile ke liye kam */
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .stroke-text {
+    -webkit-text-stroke: 2px white;
+  }
+}
+.stroke-bg {
+  -webkit-text-stroke: 2px #d1d5db;
+  color: transparent;
+  opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+  .stroke-bg {
+    -webkit-text-stroke: 1px #d1d5db;
+  }
+}
+
+
+
+
+body {
+  overflow-x: hidden;
+}
